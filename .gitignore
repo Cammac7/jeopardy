@@ -5,4 +5,5 @@ index_tidy.html
 jeopardystuff.zip
 .idea/
 games/wdwnt/*.*
-images/wdwnt/
+images/*
+board.json

@@ -94,13 +94,13 @@ $(function(){
             $('#modal-answer-title').empty().text(currentBoard[category].name + ' - $' + value);
             $('#question').empty().text(currentBoard[category].questions[question].question);
             if (questionImage){
-                if (questionImage.startsWith("http") || questionImage.startsWith("data")) {
+                if (questionImage.startsWith("http")) {
                     srcPrefix = ''
                 }
                 else {
                     srcPrefix = './'
                 }
-                $('#question-image').empty().append("<img src=" + srcPrefix + questionImage + ">").show();
+                $('#question-image').empty().append('<img class="imageelement" src=' + srcPrefix + questionImage + ">").show();
             }
             else {
                 $('#question-image').empty().hide();
@@ -395,9 +395,6 @@ function resizeAnswerModal() {
     //modalBodyObj.outerHeight(totalModalHeight);
     modalBodyObj.css('height',(totalModalHeight - modalBodyPadding)); // Adjust again for padding
 
-    questionCenterPadding = ($('#question-modal-body').height() - ($('#question-image').height() + $('#question').height()))/2;
-    $('#question').css('padding-top', questionCenterPadding);
-
 }
 
 function handleAnswer(){
@@ -488,5 +485,4 @@ function handleFinalAnswer(){
         //resizeAnswerModal();
         //$('#answer-close-button').show();
     });
-
 }

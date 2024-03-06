@@ -88,9 +88,14 @@ body {
 }
 
 #question-image {
-    height:100%;
-    flex: 1;
+   /* height:100%;
+    flex: 1;*/
     overflow-y: auto;
+}
+
+.imageelement {
+    max-height: 100%;
+    max-width:100%;
 }
 
 #daily-double-modal .modal-footer {
@@ -156,7 +161,16 @@ body {
 	margin-right: 10px;
 }
 
-#question-image img, #final-image img {
-    	max-width: 100%;
-	max-height: 60vh;
+}
+
+.header {
+  font-weight: 600;
+}
+
+#finalmain-board {
+  background-color: navy;
+}
+
+#amountIncrease {
+  font-size: 25px;
 }
