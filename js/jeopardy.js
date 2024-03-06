@@ -100,7 +100,7 @@ $(function(){
                 else {
                     srcPrefix = './'
                 }
-                $('#question-image').empty().append("<img style='max-height: 100%;max-width:100%;'src=" + srcPrefix + questionImage + ">").show();
+                $('#question-image').empty().append('<img class="imageelement" src=' + srcPrefix + questionImage + ">").show();
             }
             else {
                 $('#question-image').empty().hide();

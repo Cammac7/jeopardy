@@ -93,6 +93,11 @@ body {
     overflow-y: auto;
 }
 
+.imageelement {
+    max-height: 100%;
+    max-width:100%;
+}
+
 #daily-double-modal .modal-footer {
 	text-align: center;
 }
