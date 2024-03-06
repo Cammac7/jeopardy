@@ -94,13 +94,13 @@ $(function(){
             $('#modal-answer-title').empty().text(currentBoard[category].name + ' - $' + value);
             $('#question').empty().text(currentBoard[category].questions[question].question);
             if (questionImage){
-                if (questionImage.startsWith("http") || questionImage.startsWith("data")) {
+                if (questionImage.startsWith("http")) {
                     srcPrefix = ''
                 }
                 else {
                     srcPrefix = './'
                 }
-                $('#question-image').empty().append("<img src=" + srcPrefix + questionImage + ">").show();
+                $('#question-image').empty().append("<img style='max-height: 100%;max-width:100%;'src=" + srcPrefix + questionImage + ">").show();
             }
             else {
                 $('#question-image').empty().hide();
@@ -488,5 +488,4 @@ function handleFinalAnswer(){
         //resizeAnswerModal();
         //$('#answer-close-button').show();
     });
-
 }
